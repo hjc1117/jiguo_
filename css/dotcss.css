@@ -1,0 +1,14 @@
+#report-change {
+    height: 485px !important;
+    overflow: hidden;
+}
+
+#sale-change {
+    height: 240px;
+    overflow: hidden;
+}
+
+#myDiv {
+    height: 735px;
+    overflow: hidden;
+}
