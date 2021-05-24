@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册</title>
-    <link rel="stylesheet" href="./注册.css">
+    <link rel="stylesheet" href="./css/注册.css">
     <script src="./js/jquery.min.js"></script>
 </head>
 
@@ -28,11 +28,9 @@
                 <a href="">
                     <img src="./css/img/search.png" alt="">
                 </a>
-
                 <a href="./注册.html">
                     <div class="one1">注册</div>
                 </a>
-
             </div>
         </header>
         <!-- 头部结束 -->
@@ -40,7 +38,6 @@
             <section>
                 <div class="two">
                     <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注册极果</h2>
-
                     <form class="two1" action="">
                         <p>
                             <input class="three" type="text" placeholder="请输入登录手机号" pattern="^1[34578][0-9]{9}$" required="required">
@@ -66,10 +63,6 @@
                             <button id="three">立即注册</button>
                         </p>
                     </form>
-
-
-
-
                 </div>
             </section>
         </main>
@@ -133,48 +126,6 @@
     </div>
 </body>
 <script text="">
-    /**表单验证是否密码相同**/
-
-
-    // function mima() {
-    //     var paw_1 = document.getElementById("#paw1");
-    //     var paw_2 = document.getElementById("#paw2")
-    //     if (paw_1 == paw_2) {
-    //         alert("密码不一致，请重新输入")
-    //     } else {
-    //         alert("可以啦可以注册啦")
-    //     }
-    // }
-    // mima();
-
-    // function check(form) {
-    //     var p1 = form.paw1;
-    //     var p2 = form.paw2;
-    //     if (p1.value != p2.value) {
-    //         p2.oninvalid();
-    //         return false;
-    //     }
-    //     return true;
-    // }
-
-    // window.onload = function() {
-    //         var paw_2 = document.forms["my_f1"].paw_2;
-    //         paw_2.oninvalid = function() {
-    //             this.setCustomValidity("密码不一致，请重新输入");
-    //         }
-    //         paw_2.oninput = function() {
-    //             this.setCustomValidity("");
-    //         }
-    //     }
-    // function checkname() {
-    //     var paw1 = document.getElementById("paw1");
-    //     var paw2 = document.getElementById("paw2")
-    //     if (paw1 == paw2) {
-    //         return;
-    //     } else {
-    //         alert("两次密码不一样请重新输入")
-    //     }
-    // }
     $(function() {
         /**获取验证码 倒计时**/
         var wait = 60;
