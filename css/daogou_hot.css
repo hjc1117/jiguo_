@@ -183,6 +183,8 @@ section {
     width: 1520px;
     height: 1187px;
     background-color: #f7f7f7;
+    margin: 0 auto;
+    position: relative;
 }
 
 .position {
@@ -289,7 +291,7 @@ span {
     height: 30px;
     /* margin: 1120px auto; */
     position: absolute;
-    top: 1480px;
+    top: 1130px;
     left: 690px;
 }
 
