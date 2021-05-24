@@ -26,7 +26,7 @@
             </div>
             <div class="top1">
                 <a href="">
-                    <img src="./css/img/search.png" alt="">
+                    <img src="./img/search.png" alt="">
                 </a>
                 <a href="./注册.html">
                     <div class="one1">注册</div>
@@ -40,24 +40,24 @@
                     <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注册极果</h2>
                     <form class="two1" action="">
                         <p>
-                            <input class="three" type="text" placeholder="请输入登录手机号" pattern="^1[34578][0-9]{9}$" required="required">
+                            <input class="three" type="text" placeholder="请输入登录手机号" pattern="^1[34578][0-9]{9}$" required>
                         </p>
                         <p>
-                            <input class="three1" type="text" placeholder="请输入图片校验码" required="required">
+                            <input class="three1" type="text" placeholder="请输入图片校验码" required>
                             <img src="./img/imgCode.jpg" alt="">
                         </p>
                         <p>
-                            <input class="three2" type="text" placeholder="请输入4位数字验证码" required="required">
+                            <input class="three2" type="text" placeholder="请输入4位数字验证码" required>
                             <a href="javascript:void(0)" class="four">获取验证码</a>
                         </p>
                         <p>
-                            <input class="three" type="text" placeholder="请输入用户名" required="required">
+                            <input class="three" type="text" placeholder="请输入用户名" required>
                         </p>
                         <p>
-                            <input class="three" type="password" placeholder="请输入新密码" id="paw1" required="required">
+                            <input class="three" type="password" placeholder="请输入新密码" id="p1" required>
                         </p>
                         <p>
-                            <input class="three" type="password" placeholder="请确认密码" id="paw2" required="required">
+                            <input class="three" type="password" placeholder="请确认密码" id="p2" required>
                         </p>
                         <p>
                             <button id="three">立即注册</button>
@@ -125,6 +125,38 @@
         </footer>
     </div>
 </body>
+<script>
+    function one() {
+        var p1 = document.getElementById("p1").value;
+        if (p1.length == 0) {
+            value('密码不能为零');
+            return;
+        } else if (p1.length < 6) {
+            alert('密码不能小于六位数');
+            return;
+        }
+        var p2 = document.getElementById("p2").value;
+        if (p2.length == 0) {
+            alert('重复密码不能为零');
+            return;
+        } else if (p2.length < 6) {
+            alert('重复密码不能小于六位数');
+            return;
+        } else if (p2.length == 0) {
+            alert('重复密码不能为零');
+            return;
+        } else if (p2 != p1) {
+            alert('两次输入的密码不一样，请重新输入');
+            return;
+        } else {
+            alert('注册成功');
+            return;
+        }
+        $(".four").click(function() {
+            one();
+        });
+    }
+</script>
 <script text="">
     $(function() {
         /**获取验证码 倒计时**/
