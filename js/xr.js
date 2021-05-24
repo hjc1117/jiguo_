@@ -125,3 +125,17 @@ window.onload = function() {
     time()
 }
 setInterval(time, 10000)
+
+$(function() {
+    var shenqing = 126;
+    $('.btn a').click(function() {
+        if (shenqing >= 150) {
+            alert('150台卖完了噢!');
+            return;
+        }
+        shenqing++;
+        $('.label span').eq(0).text(shenqing + '人申请');
+
+    })
+
+})
