@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 头部导航 */
+
+.box {
+    width: 1518px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+
+header {
+    width: 80%;
+    height: 60px;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+
+header img {
+    height: 50px;
+    margin-left: 100px;
+    float: left;
+    margin-top: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header .top .one {
+    color: red;
+    margin-left: 70px;
+}
+
+header .top ul li {
+    float: left;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 0px 20px;
+    /* margin-left: 50px; */
+}
+
+header .top ul li a:hover {
+    color: red;
+}
+
+header .top1 {
+    padding-top: 15px;
+    margin-right: 80px;
+}
+
+header .top1 a img:hover {
+    transform: scale(1.5);
+}
+
+header .top1 img {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 290px;
+}
+
+header .top1 .one1 {
+    float: right;
+    margin-right: 10px;
+    width: 60px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: red;
+}
+
+
+/* 头部结束 */
+
+
+/* 中间连接部分 */
+
+nav {
+    position: relative;
+}
+
+nav img {
+    width: 1518px;
+    /* height: 300px; */
+}
+
+nav .two {
+    width: 290px;
+    height: 200px;
+    /* background-color: royalblue; */
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    animation: two 1s forwards;
+}
+
+@keyframes two {
+    0% {
+        transform: translate(350px, -1500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+nav .two h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+nav .two li {
+    float: left;
+    /* padding: 25px 20px; */
+    /* margin-left: 20px; */
+}
+
+nav .two li:nth-child(1) {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(168, 164, 164);
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+nav .two li:nth-child(2) {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(170, 168, 168);
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+nav .two li:nth-child(3) {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(170, 166, 166);
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+nav .two p {
+    font-size: 17px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 40px;
+    color: white;
+}
+
+nav .two .two1 {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 50px;
+    background-color: red;
+    margin-top: 10px;
+    color: white;
+}
+
+
+/* 中间连接部分结束 */
+
+
+/* 热门试用 */
+
+.useLc {
+    background: #f0f0f0;
+}
+
+.useLc .lcList {
+    color: #737373;
+}
+
+.lcList dt:nth-child(1):before {
+    background: url(./css/img/use1.png) no-repeat center top;
+}
+
+.lcList dt:nth-child(2):before {
+    background: url(./css/img/use2.png) no-repeat center top;
+}
+
+.lcList dt:nth-child(3):before {
+    background: url(./css/img/use3.png) no-repeat center top;
+}
+
+.lcList dt:nth-child(4):before {
+    background: url(./css/img/use4.png) no-repeat center top;
+}
+
+.lcList dt:nth-child(5):before {
+    background: url(./css/img/use5.png) no-repeat center top;
+}
+
+.useDetial .title:after {
+    background: #fe5341;
+}
+
+.useDetial .top {
+    color: rgb(255, 0, 0);
+}
+
+.useDetial .little {
+    color: rgb(0, 112, 192);
+}
+
+.useDetial .red {
+    color: rgb(255, 0, 0);
+}
+
+.listR .gm .money {
+    color: #fe5341;
+}
+
+.listR .gm .buyBtn {
+    color: #fff;
+    background: #fe5341;
+}
+
+.listR .gm .buyBtn:hover {
+    background: #f3250f;
+}
+
+.listR .gm .resource {
+    color: #a3a3a3;
+}
+
+
+/*试用详情*/
+
+.useLc {
+    height: 62px;
+    padding: 20px 0;
+}
+
+.useLc .lcTit {
+    font-size: 20px;
+    width: 43px;
+    padding-left: 11px;
+    border-left: 6px #fe5341 solid;
+}
+
+.lcList dt {
+    width: 188px;
+    text-align: center;
+    float: left;
+}
+
+.lcList dt:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 43px;
+}
+
+.lcList dt:nth-child(1) p {
+    display: inline-block;
+    border-bottom: 2px solid #fe5341;
+}
+
+.useIntro {
+    margin-top: 25px;
+}
+
+.useDetial {
+    font-size: 16px;
+    width: 700px;
+}
+
+.useDetial .title {
+    position: relative;
+    padding: 18px 0 16px 16px;
+    font-size: 20px;
+}
+
+.useDetial .title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 30px;
+    left: 0;
+    top: 18px;
+}
+
+.useDetial .top {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.useDetial .little {
+    font-weight: bold;
+}
+
+.useDetial .red {
+    font-weight: bold;
+}
+
+.listR .gm .money {
+    font-size: 40px;
+    padding: 20px 0 15px;
+}
+
+.listR .gm .buyBtn {
+    display: block;
+    width: 287px;
+    margin-left: 704px;
+    height: 48px;
+    border-radius: 5px;
+    line-height: 48px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.listR .gm .resource {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.useBtm {
+    margin-bottom: 25px;
+}
+
+.wrap {
+    width: 1000px;
+    min-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.fix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.title1 {
+    overflow: hidden;
+    border-left: 5px solid red;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h5 {
+    margin: 10px;
+}
+
+.red {
+    margin: 10px 0;
+}
+
+.red1 {
+    color: red;
+    margin: 20px 0;
+    margin-left: 65%;
+}
+
+
+/* 底部开始*/
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #505050;
+    position: relative;
+}
+
+footer>img {
+    float: left;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+footer .five {
+    float: left;
+    width: 125px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+footer .five p a {
+    font-size: 12px;
+    margin-top: 20px;
+    color: rgb(155, 152, 152);
+}
+
+footer .six {
+    width: 120px;
+    height: 200px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+footer .six dt {
+    margin-bottom: 20px;
+}
+
+footer .six dt a {
+    color: rgb(155, 152, 152);
+}
+
+footer .six dd a {
+    font-size: 12px;
+    color: rgb(155, 152, 152);
+    /* margin-top: 20px; */
+}
+
+.seven {
+    width: 150px;
+    height: 250px;
+    float: left;
+    /* margin-left: 20px; */
+    margin-top: 50px;
+}
+
+.seven dt {
+    color: rgb(155, 152, 152);
+    margin-bottom: 20px;
+}
+
+.seven dt a {
+    color: rgb(155, 152, 152);
+}
+
+.seven dd a {
+    font-size: 12px;
+    color: rgb(155, 152, 152);
+}
+
+.eight {
+    width: 200px;
+    height: 250px;
+    float: left;
+    /* margin-left: 20px; */
+    margin-top: 50px;
+}
+
+.eight dt {
+    /* color: rgb(155, 152, 152); */
+    margin-bottom: 20px;
+}
+
+.eight dt a {
+    color: rgb(155, 152, 152);
+    margin-bottom: 20px;
+}
+
+.eight dd a {
+    font-size: 12px;
+    color: rgb(155, 152, 152);
+}
+
+.nine {
+    width: 200px;
+    height: 250px;
+    float: left;
+    margin-top: 50px;
+}
+
+.nine dt {
+    margin-bottom: 20px;
+}
+
+.nine dt a {
+    color: rgb(155, 152, 152);
+}
+
+.nine dd a {
+    font-size: 12px;
+    color: rgb(155, 152, 152);
+}
+
+footer .ten {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(105, 103, 103);
+    border-radius: 10px;
+    right: 200px;
+    bottom: 100px;
+}
+
+footer .ten1 a {
+    color: rgb(155, 152, 152);
+    position: absolute;
+    left: 45%;
+    bottom: 30px;
+}
+
+
+/* 底部结束 */
